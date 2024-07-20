@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <H1>Sistema de multa de trânsito</H1>
+    A sua velocidade é de <input type="number" name="num" id="num"> km/h!
+    <button onclick="multa()">Verifique</button>
+    <div id="res"></div>
+    <script>
+        function multa(){
+            var vel = document.getElementById('num').value
+            document.getElementById('res').innerHTML = `<p>A sua velocidade é de <strong>${vel}km/h</strong></p>`
+            if (vel>60){
+                document.getElementById('res').innerHTML += '<p>Você está <strong>MULTADO</strong></p>'
+            }
+            res.innerHTML += 'Dirija sempre com o cinto de segurança!'
+
+        }
+    </script>
+</body>
+</html>
