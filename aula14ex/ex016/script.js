@@ -4,7 +4,7 @@ function contar(){
     let passo = document.getElementById('txtp')
     
     if (ini.value.length == 0 ||fim.value.length == 0 || passo.value.length == 0 ) {
-        window.alert ('[ERRO] Falta dados!')
+        window.alert ('[ERRO] Faltam dados!')
     } else {
         res.innerHTML = 'Contando: '
 
@@ -12,8 +12,8 @@ function contar(){
         let f = Number(fim.value)
         let p = Number(passo.value)
 
-        for (let c = i; c<=f; c+=p) {
-            res.innerHTML += `${c}`
+        for (let c = i; c <= f; c += p) {
+            res.innerHTML += `${c} `
         }
     }
 }
